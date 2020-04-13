@@ -23,14 +23,18 @@ input {
     margin-bottom: 1.5rem;
 }
 
-/* input:valid,
 input:invalid {
-    outline: 2px solid crimson;
+    box-shadow: 0 0 0 0.2rem #ec363680;
 }
 
-input:valid {
-    outline-color: darkgreen;
-} */
+.invalid-date {
+    display: none;
+    color: #ec3636;
+}
+
+input:invalid ~ .invalid-date {
+    display: inline;
+}
 
 input:read-only {
     color: silver;
