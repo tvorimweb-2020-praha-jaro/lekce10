@@ -1,35 +1,24 @@
-# Lekce 10: Tabulky a formuláře
+# Tvořím Web od A do Z: Podklady pro 10. lekci
 
-## Cíl
+## Příklady
 
-Účastnice se seznámí se základními prvky HTML formulářů.
+- [Formuláře](priklady/01-formulare)
+- [Tabulky](priklady/02-tabulky)
 
-## Osnova
 
-1) HTML tabulky
-    * `<table>`, `<tr>`, `<th>`, `<td>`
-    * `<thead>`, `<tfoot>`
-    * `<caption>` - záhlaví tabulky, CSS: `caption-side`, `text-align`
-     
-2) HTML formuláře
-    * `<form>`
-        * method, action
-        * zmínit enctype
-    * `<input>`
-        * type = text, email, number, checkbox, radio, submit, tel, phone, color, date, email, range (+min,max), time
-        * required
-        * disabled
-        * placeholder
-    * `<label>`
-        * `for` - mapuje na `id` atribut inputu
-    * `<button>`
-        * type = reset, submit, button
-        * snadno stylovatelné
-    * `<select>` + `<option>` + `<optgroup>`
-        * multiple + size
-        * velmi špatně se styluje
-    * `<textarea>`
-    * `<datalist>` + `<option value="val">`
-        * `<datalist id="foo">...</datalist><input list="foo">`
-    * `<fieldset>` + `<legend>`
+## Formuláře
 
+### Focus
+
+**Prvek na stránce, který v danou chvíli přijímá vstup z klávesnice, má _focus_.** Focus tak mohou získat jen některé prvky, konkrétně formulářové prvky a odkazy. Po těchto _focusovatelných_ prvcích se lze pohybovat pomocí klávesy <kbd>Tab</kbd> (při současném stisku <kbd>Shift</kbd> směrem vzad). Mezerníkem nebo klávesou <kbd>Enter</kbd>/<kbd>Return</kbd> pak spustíte na daném prvku akci (zaškrtnete políčko, stisknete tlačítko, prokliknete odkaz).
+
+Vyplňte si [cvičný formulář](http://udacity.github.io/ud891/lesson2-focus/01-basic-form/), hledejte:
+
+- zpáteční letenku
+- do Melbourne
+- odlet 28. září 2020
+- návrat 8. října 2020
+- místo u okénka
+- nechcete spam
+
+Pozor, myší to nejde ☺.
