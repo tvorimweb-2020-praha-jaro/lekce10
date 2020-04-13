@@ -1,0 +1,41 @@
+/*
+    1. orámovat jednoduchou čarou #ccc
+    2. přidat vnitřní odsazení buňkám tabulky
+    3. data konzultací tučně
+    4. do prázdných buněk vypsat znak: ×
+    5. liché řádky tabulky podbarvit #ddd
+    6. sudé řádky tabulky podbarvit #eee
+    7. bonus: za datum dopsat letošní rok (pomocí CSS!)
+*/
+
+table {
+    border-collapse: collapse; /* [1] */
+    font-family: sans-serif;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ddd; /* [5] */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee; /* [6] */
+}
+
+th,
+td {
+    border: 1px solid #ccc; /* [1] */
+    padding: .5rem 1rem; /* [2] */
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: 700; /* [3] */
+}
+
+td:first-child::after {
+    content: ' 2020';  /* [7] */
+}
+
+td:empty::after {
+    content: '×'; /* [4] */
+}
