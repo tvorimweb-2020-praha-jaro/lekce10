@@ -4,60 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuláře</title>
-    <link rel="stylesheet" href="styly.css">
 </head>
 <body>
     <!-- Adresa pro zobrazení formuláře: https://pub.dvratil.cz/czechitas/zobraz.php //-->
     <!-- Adresa pro odeslání emailu: https://pub.dvratil.cz/czechitas/mailer.php //-->
-
-    <form action="https://pub.dvratil.cz/czechitas/zobraz.php" method="POST">
-        <label for="nick">Jméno nebo přezdívka</label>
-        <input id="nick" type="text" name="nickname" required>
-        <input id="id" type="hidden" name="id" readonly value="87897">
-        <label for="telefon">Telefon</label>
-        <input id="telefon" type="text" name="phone" disabled>
-        <label for="email">E-mail</label>
-        <input id="email" type="email" name="email" required>
-        <label for="spam">
-            <input id="spam" type="checkbox" name="confirmation" value="ano" checked>
-            Chci dostávat spam
-        </label>
-        <fieldset>
-            <legend>Pohlaví</legend>
-            <div class="fieldset">
-                <label for="muz">
-                    <input id="muz" type="radio" name="pohlavi" value="muž">
-                    muž
-                </label>
-                <label for="zena">
-                    <input id="zena" type="radio" name="pohlavi" value="žena">
-                    žena
-                </label>
-                <label for="jine">
-                    <input id="jine" type="radio" name="pohlavi" value="jiné">
-                    jiné
-                    <input type="text" name="jine-pohlavi" placeholder="uveďte">
-                </label>
-            </div>
-        </fieldset>
-        <label for="ctvrt">Čtvrť</label>
-        <select name="ctvrt" id="ctvrt">
-            <option>---</option>
-            <option value="ben">Benice</option>
-            <option value="bub">Bubeneč</option>
-            <option value="dej">Dejvice</option>
-            <option value="hol">Holešovice</option>
-            <option value="hrd">Hrdlořezy</option>
-            <option value="jin">Jinonice</option>
-            <option value="pk">Přední Kopanina</option>
-            <option value="zk">Zadní Kopanina</option>
-        </select>
-        <label for="bio">Něco o sobě</label>
-        <textarea name="zivotopis" id="bio" cols="30" rows="10"></textarea>
-        <div>
-            <button>Odeslat</button>
-        </div>
-    </form>
-
 </body>
 </html>
